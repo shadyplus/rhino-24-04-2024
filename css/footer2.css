@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-minimal {
+  background: #f7f7f7;
+  margin-top: 25px;
+}
+
+.footer-minimal * {
+  color: #000 !important;
+
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer-minimal .rd-navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-minimal .rd-navbar-nav>* {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.rd-nav-link {
+  color: #151515;
+  font-weight: 500;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.rd-nav-link:hover {
+  color: #cef1ea;
+}
+
+.rd-nav-link:before {
+  position: absolute;
+  content: '';
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #cef1ea;
+  transition: all .3s;
+}
+
+.footer-minimal .footer-brand a {
+  max-width: 240px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.bg-gray-100 {
+  background: #f7f7f7;
+}
+
+.bg-gray-100 * {
+  color: #000 !important;
+}
+
+p.rights {
+  font-size: 16px;
+  color: #9b9b9b;
+  letter-spacing: 0.05em;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-xs {
+  padding: 0;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.section {
+  padding: 5px 0;
+}
+
+.ui-to-top {
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 46px;
+  color: #ffffff;
+  background: #cef1ea;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  transition: .45s all ease-in-out;
+  transform: translate3d(0, 100px, 0);
+}
+
+.ui-to-top.active {
+  transform: translate3d(0, 0, 0);
+}
+
+.ui-to-top {
+  right: 40px;
+  bottom: 40px;
+}
+
+.fa {
+  display: inline-block;
+  font-family: 'FontAwesome';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+.fa-angle-up:hover {
+  color: black;
+}
+
+@media screen and (max-width: 750px) {
+
+  .footer-nav {
+    flex-direction: column;
+  }
+  .col-lg-10 {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .footer-minimal {
+    margin-top: 0;
+  }
+
+  .row {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .rd-navbar-nav {
+      padding: 0;
+      flex-direction: column;
+  }
+
+  .rd-nav-item {
+      margin: 10px;
+  }
+}
